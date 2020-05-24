@@ -84,9 +84,9 @@ const style = css`
     }
 
     .day-wrapper ha-icon.progress-bar {
-        height: 9px;
-        width: 9px;
-        margin-top: 2px;
+        --mdc-icon-size: 9px;
+        position: relative;
+        top: 1.5px;
         color: var(--accent-color);
     }
 
@@ -111,9 +111,11 @@ const style = css`
     }
 
     .event-origin ha-icon {
-        height: 13px;
-        margin-top: -3px;
+        position: relative;
+        top: -1px;
+        left: 4px;
         color: var(--accent-color);
+        --mdc-icon-size: 13px;
     }
 `;
 
